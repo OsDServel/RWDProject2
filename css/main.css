@@ -17,6 +17,7 @@ header{
 }
 nav{
 	grid-area: nav;
+	margin: 0 auto;
 }
 #login{
 	grid-area: login;
@@ -36,17 +37,12 @@ nav{
 #build_websites{
 	grid-area: build_websites;
 }
-footer{
-	grid-area: footer;
-	margin: 20px 0;
-	text-align: center;
-}
 
 /*************
 /GRID SYSTEM UPDATES/
 ********************/
 header h1{
-	font-size: 3.25em;
+	font-size: 4em;
 	text-align: center;
 	color: white;
 	margin-bottom: 20px;
@@ -86,6 +82,11 @@ header h1{
 	margin-bottom: 10px;
 	text-align: center;
 }
+footer{
+	grid-area: footer;
+	margin: 20px 0;
+	text-align: center;
+}
 input{
 	width: 85%;
 	color: darkblue;
@@ -95,24 +96,21 @@ input{
 	margin-bottom: 10px;
 	text-align: center;
 }
-section{
-	padding: 10px;
-	text-align: center;
-}
-.graphs{
-	font-size: 100px;
-	line-height: 1;
-	margin: 10px 0;
-	text-align: center;
-}
 section img{
-	width: 50%;
-	border-radius: 50%;
-	margin-bottom: 5px;
-	border-bottom: 6px solid #4f97d5;
+	max-width:  100%;
 }
-.profile{
-	widows: 
+.btn{
+	display: inline-block;
+	background: #3498db;
+	border-radius: 28px;
+	color: white;
+	font-size: 15px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	margin-top: 2%;
+}
+.btn:hover{
+	background-color: #3cb0fd;
 }
 
 
@@ -126,11 +124,10 @@ section img{
 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 10vh 4vh 38vh 38vh 10vh;
+	grid-template-rows: auto 4vh auto auto 10vh;
 	grid-gap: 15px;
 	margin: 0 auto;
 	}
-
 	#container{
 		grid-template-areas: 
 			"header header header"
@@ -138,6 +135,10 @@ section img{
 			"login enhance_your_career important_stats"
 			"build_apps build_games build_websites"
 			"footer footer footer"
+	}
+	div{
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
 	}
 }
 
@@ -149,7 +150,7 @@ section img{
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 10vh 4vh 25vh 25vh 25vh 10vh;
+	grid-template-rows: auto 4vh auto auto auto 10vh;
 	grid-gap: 15px;
 	margin: 0 auto;
 	}
@@ -163,6 +164,46 @@ section img{
 			"build_games build_websites"
 			"footer footer"
 	}
+	section{
+	padding: 10px;
+	text-align: center;
+	}
+	.graphs{
+		font-size: 90px;
+		line-height: 1;
+		margin: 3% 0 0;
+		text-align: center;
+	}
+	.profile{
+		width: 20%;
+		border-radius: 50%;
+		margin-bottom: 5px;
+		border-bottom: 6px solid #4f97d5;
+	}
+	header{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	header h1{
+		font-size: 2.5em;
+	}
+	section{
+		font-size: 14px;
+		padding: 10px;
+	}
+/*EXTRA CODE SELECTORS THAT HAVE ALREADY BEEN WRITTEN ABOVE, BUT I WILL LEAVE IN AS I AM FOLLOWING SOMEONE ELSE'S CODE AS I CODE ALONG TO THEIR VIDEO*/
+	/*.profile{
+		width: 20%;
+	}*/
+/*	.graphs{
+		font-size: 90px;
+		margin: 3% 0 0;
+	}*/
+	div{
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
 }
 
 
@@ -173,7 +214,7 @@ section img{
 
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 10vh 6vh 14vh 14vh 14vh 14vh 14vh 14vh 5vh;
+	grid-template-rows: auto auto auto auto auto auto auto auto 20vh;
 	grid-gap: 15px;
 	margin: 0 auto;
 	}
@@ -189,5 +230,28 @@ section img{
 			"build_games"
 			"build_websites"
 			"footer"
+	}
+	header{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0;
+	}
+	header h1{
+		font-size: 1.75em;
+		padding-top: 25px;
+	}
+	nav{
+		margin-top: 0;
+	}
+	.options{
+		font-size: 12px;
+	}
+	footer{
+		margin-bottom: 100px;
+	}
+	div{
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
 	}
 }
